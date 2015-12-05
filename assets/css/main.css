@@ -1,6 +1,7 @@
 /* General */
 body {
   font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+  color: #333;
 }
 
 .content {
@@ -30,7 +31,7 @@ body {
   margin: 5px;
   width: 2.5em;
   height: 3.5em;
-  border: 2px #555 solid;
+  border: 2px #333 solid;
   border-radius: 3px;
   background-size: 1.5em auto;
   background-repeat: no-repeat;
