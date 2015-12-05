@@ -8,6 +8,8 @@ To start, clone the repository and run:
 `npm install -g karma-chrome-launcher`  
 `gulp`  
 
+To compress the app, run `gulp compressApp`  
+    
 Start the server with `node server.js` and navigate to `localhost:1337`  
 
 Run the tests with `karma start`.
