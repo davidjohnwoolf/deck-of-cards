@@ -54,17 +54,17 @@ body {
   }
 
 .hearts {
-  background-image: url('../img/heart.png');
+  background-image: url('/assets/img/heart.png');
 }
 
 .diamonds {
-  background-image: url('../img/diamond.png');
+  background-image: url('/assets/img/diamond.png');
 }
 
 .spades {
-  background-image: url('../img/spade.png');
+  background-image: url('/assets/img/spade.png');
 }
 
 .clubs {
-  background-image: url('../img/club.png');
+  background-image: url('/assets/img/club.png');
 }
