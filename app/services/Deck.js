@@ -26,24 +26,24 @@ function Deck() {
     this.cards.push(Card(i + 40, ranks[i], suits[3], ranks[i] + ' of ' + suits[3]));
   }
 
-  // sort cards in ascending order first by suit then by rank
-  this.sortCards = function() {
-    this.cards.sort(function(a, b) {
-      return a.id - b.id
-    });
-  };
-
-  // randomly arrange the cards
-  this.shuffleCards = function() {
-    for (var i = this.cards.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var temp = this.cards[i];
-      this.cards[i] = this.cards[j];
-      this.cards[j] = temp;
-    }
-  }
-
   this.sortCards();
+}
+
+// sort cards in ascending order first by suit then by rank
+Deck.prototype.sortCards = function() {
+  this.cards.sort(function(a, b) {
+    return a.id - b.id
+  });
+};
+
+// randomly arrange the cards
+Deck.prototype.shuffleCards = function() {
+  for (var i = this.cards.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = this.cards[i];
+    this.cards[i] = this.cards[j];
+    this.cards[j] = temp;
+  }
 }
 
 module.exports = Deck;
