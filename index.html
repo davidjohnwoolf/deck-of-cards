@@ -13,8 +13,8 @@
     <div ng-controller="DeckCtrl as deck" class="content">
 
       <div class="menu">
-        <button name="shuffle">Shuffle</button>
-        <button name="sort">Sort</button>
+        <button ng-click="deck.shuffleCards()">Shuffle</button>
+        <button ng-click="deck.sortCards()">Sort</button>
       </div>
 
       <div ng-repeat="card in deck.cards">

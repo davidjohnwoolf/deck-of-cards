@@ -30,6 +30,7 @@ Deck.prototype.sortCards = function() {
   this.cards.sort(function(a, b) {
     return a.id - b.id
   });
+  return this.cards;
 };
 
 // randomly arrange the cards
@@ -40,6 +41,7 @@ Deck.prototype.shuffleCards = function() {
     this.cards[i] = this.cards[j];
     this.cards[j] = temp;
   }
-}
+  return this.cards;
+};
 
 module.exports = Deck;
