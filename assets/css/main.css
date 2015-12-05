@@ -8,20 +8,20 @@ body {
   padding: 20px;
 }
 
-.menu {
-  margin-bottom: 10px;
-}
-
-  .menu button {
-    border: none;
-    background: #ddd;
-    border-radius: 3px;
-    padding: 10px;
+  .menu {
+    margin-bottom: 10px;
   }
 
-  .menu button:hover {
-    background: #ccc;
-  }
+    .menu button {
+      border: none;
+      background: #ddd;
+      border-radius: 3px;
+      padding: 10px;
+    }
+
+    .menu button:hover {
+      background: #ccc;
+    }
 
 /* Cards */
 
