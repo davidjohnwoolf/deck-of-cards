@@ -12,16 +12,16 @@
   <body>
     <div ng-controller="DeckCtrl" class="content">
 
-      <div class="menu">
+      <section class="menu">
         <button ng-click="deck.shuffleCards()">Shuffle</button>
         <button ng-click="deck.sortCards()">Sort</button>
-      </div>
+      </section>
 
-      <div ng-repeat="card in deck.cards">
+      <section class="cards">
 
-        <card></card>
+        <card ng-repeat="card in deck.cards"></card>
 
-      </div>
+      </section>
 
     </div>
 

@@ -1,6 +1,8 @@
 function card() {
   return {
-    templateUrl: 'templates/card.html'
+    restrict: 'E',
+    templateUrl: 'templates/card.html',
+    replace: true
   }
 }
 
