@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
-    <div ng-controller="DeckCtrl as deck" class="content">
+    <div ng-controller="DeckCtrl" class="content">
 
       <div class="menu">
         <button ng-click="deck.shuffleCards()">Shuffle</button>
@@ -19,10 +19,7 @@
 
       <div ng-repeat="card in deck.cards">
 
-        <section class="card {{card.suit}}">
-          <span>{{card.rank}}</span>
-          <span>{{card.rank}}</span>
-        </section>
+        <card></card>
 
       </div>
 

@@ -30,6 +30,7 @@ Deck.prototype.sortCards = function() {
   this.cards.sort(function(a, b) {
     return a.id - b.id
   });
+
   return this.cards;
 };
 
@@ -41,6 +42,7 @@ Deck.prototype.shuffleCards = function() {
     this.cards[i] = this.cards[j];
     this.cards[j] = temp;
   }
+  
   return this.cards;
 };
 

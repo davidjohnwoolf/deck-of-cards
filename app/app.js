@@ -1,10 +1,10 @@
 var angular = require('angular');
 var ngMock = require('angular-mocks/ngMock');
-var DeckCtrl = require('./controllers/DeckCtrl');
-var Deck = require('./services/Deck');
 
 var app = angular.module('app', []);
 
-app.service('Deck', Deck);
+app.service('Deck', require('./services/Deck'));
 
-app.controller('DeckCtrl', [ '$scope', 'Deck', DeckCtrl ]);
+app.controller('DeckCtrl', [ '$scope', 'Deck', require('./controllers/DeckCtrl') ]);
+
+app.directive('card', require('./directives/card'));

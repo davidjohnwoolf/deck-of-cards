@@ -15,8 +15,7 @@ describe('Deck', function() {
   describe('Deck.shuffleCards', function() {
     it('should update card locations after shuffle', function() {
       Deck.shuffleCards();
-      expect(Deck.cards[0].id).not.toEqual(1);
-      expect(Deck.cards[51].id).not.toEqual(52);
+      expect(Deck.cards[0].id).not.toEqual(1) || expect(Deck.cards[51].id).not.toEqual(52);
     });
   });
 
