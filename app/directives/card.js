@@ -1,3 +1,5 @@
+'use strict';
+
 function card() {
   return {
     restrict: 'E',

@@ -1,3 +1,5 @@
+'use strict';
+
 function Deck() {
 
   var suits = ['hearts', 'diamonds', 'spades', 'clubs'];
@@ -42,7 +44,7 @@ Deck.prototype.shuffleCards = function() {
     this.cards[i] = this.cards[j];
     this.cards[j] = temp;
   }
-  
+
   return this.cards;
 };
 
