@@ -32,6 +32,9 @@ body {
   height: 3.5em;
   border: 2px #555 solid;
   border-radius: 3px;
+  background-size: 1.5em auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
   .card span {
@@ -58,21 +61,12 @@ body {
 
 .diamonds {
   background-image: url('../img/diamond.png');
-  background-size: 1.5em auto;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .spades {
   background-image: url('../img/spade.png');
-  background-size: 1.5em auto;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .clubs {
   background-image: url('../img/club.png');
-  background-size: 1.5em auto;
-  background-repeat: no-repeat;
-  background-position: center;
 }
