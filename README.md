@@ -8,4 +8,4 @@ To start, clone the repository and run:
 
 Start the server with `node server.js` and navigate to `localhost:1337`  
 
-Run the tests with `karma start`
+Run the tests with `karma start` making sure karma-jasmine is available globally.  Also make sure you have chrome available as that is the browser karma will use to run the tests.
