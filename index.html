@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
-    <div ng-controller="DeckCtrl as deck">
+    <div ng-controller="DeckCtrl as deck" class="content">
+      <div class="menu">
+        <button name="shuffle">Shuffle</button>
+        <button name="sort">Sort</button>
+      </div>
       <div ng-repeat="card in deck.cards">
-        <section>
+        <section class="card {{card.suit}}">
           <span>{{card.rank}}</span>
-          <span>{{card.suit}}</span>
+          <span>{{card.rank}}</span>
         </section>
       </div>
     </div>

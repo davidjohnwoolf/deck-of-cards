@@ -1,6 +1,6 @@
 function Deck() {
 
-  var suits = ['Hearts', 'Diamonds', 'Spades', 'Clubs'];
+  var suits = ['hearts', 'diamonds', 'spades', 'clubs'];
   var ranks = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'];
 
   // individual card constructor
