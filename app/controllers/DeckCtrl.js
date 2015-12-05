@@ -1,7 +1,7 @@
-function DecksCtrl($scope, Deck) {
+function DeckCtrl($scope, Deck) {
   $scope.deck = Deck;
 
   console.log($scope.deck.cards);
 }
 
-module.exports = DecksCtrl;
+module.exports = DeckCtrl;
