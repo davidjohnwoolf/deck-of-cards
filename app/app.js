@@ -1,7 +1,6 @@
 'use strict';
 
 var angular = require('angular');
-var ngMock = require('angular-mocks/ngMock');
 
 var app = angular.module('app', []);
 
